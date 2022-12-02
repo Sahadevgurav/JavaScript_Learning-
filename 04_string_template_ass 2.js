@@ -1,0 +1,31 @@
+var stringHandsOn=function(){
+    str="   Hey you are doing good, keep it up   ";
+    console.log('-------------------1---------------------');
+    console.log(`String Before Performing Operation:${str}`);
+    console.log('-------------------2---------------------');
+    var len=str.length;
+    console.log(`length of given string:${len}`);
+    console.log('-------------------3---------------------');
+    var trimResult=str.trim();
+    console.log(`After removing space:${trimResult}`);
+    console.log('-------------------4---------------------');
+    var totalSpace=len-trimResult.length;
+    console.log(`Total Number Of Space:${totalSpace}`);
+    console.log('-------------------5---------------------');
+     var First=trimResult.charAt(0);
+     var second=trimResult.charAt(trimResult.length-1);
+     console.log(`First and Last Character :${First},${second}`);
+    console.log('-------------------6---------------------');
+     var splitResult=trimResult.split(" ");
+     console.log(`Total no of words :${splitResult.length}`);
+     console.log('-------------------7---------------------');
+     console.log(`This is index of "good":${str.indexOf('good')}`);
+     console.log('-------------------8---------------------');
+     console.log(`The Substring from 22 using substring:  ${str.substring(22)}`);
+     console.log(`The Substring from 22 using slice:    ${str.slice(22)}`);
+     console.log('-------------------9---------------------');
+     console.log(`string end with "up" : ${trimResult.endsWith("up")}`);
+     console.log('-------------------10---------------------');
+     console.log(`string starts with "Hey" : ${trimResult.startsWith("Hey")}`);
+}
+stringHandsOn();
